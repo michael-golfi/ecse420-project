@@ -1,0 +1,6 @@
+#!/bin/bash
+# Taken from https://gist.github.com/erikbern/78ba519b97b440e10640
+
+# Some other annoying thing we have to do
+sudo apt-get install -y linux-image-extra-virtual
+sudo reboot # Not sure why this is needed
