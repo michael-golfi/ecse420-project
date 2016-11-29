@@ -33,7 +33,7 @@ void main(string[] args) {
     foreach (lineFields; rawOutput.matchAll(lineRegex)) {
         assert(lineFields.length == 7);
         // Write the date in ISO 8601 format
-        outputFile.write(lineFields[1], 'T', lineFields[2], colDelim);
+        outputFile.write(lineFields[1], ' ', lineFields[2], colDelim);
         // Next write the step, loss, examples/sec and sec/batch
         outputFile.write(lineFields[3], colDelim, lineFields[4], colDelim, lineFields[5], colDelim, lineFields[6]);
         // Terminate the CSV row
